@@ -8,7 +8,7 @@ The goal of this data engineering project is to build a data pipeline using Apac
 
 The data is modeled as in the Entity-Relationship Diagram shown below:
 
-![alt text](https://github.com/MRazaKazmi/airflow-datapipeline-project/blob/master/images/data_model.png)
+![alt text](https://github.com/HamzaKazmi/song-warehouse/blob/master/images/data_model.png)
 
 The data model contains one fact table which contains information about artists such as artist name and listeners. Surrounding this fact table are two dimension tables - one containg information about songs such as listners and another containing information about concerts such as date and location. Some of the queries which can be run on this data model include finding the most popular song of an artist or the most popular concert location. 
 
@@ -47,7 +47,7 @@ The data model contains one fact table which contains information about artists 
 
 The data pipeline is visualized below:
 
-![alt text](https://github.com/MRazaKazmi/airflow-datapipeline-project/blob/master/images/data_pipeline.png)
+![alt text](https://github.com/HamzaKazmi/song-warehouse/blob/master/images/data_pipeline.png)
 
 1.	The first step in the pipeline is to save data fetched from the API into S3 buckets. It is generally recommended to do so before staging into Redshift for transformation into the star schema data model in Redshift. 
 2.	Data is then staged in Redshift
